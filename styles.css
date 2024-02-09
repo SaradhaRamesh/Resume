@@ -11,7 +11,7 @@ body {
 .container {
     position: relative;
     background: whitesmoke;
-    width: 50%;
+    width: 80%;
     max-width: 1000px;
     min-height: 1000px;
     display: flex;
@@ -26,7 +26,7 @@ body {
     position: relative;
     text-align: center;
     border-bottom: 2px solid #081b29;
-
+    font-size: 1.8vw; /* Responsive font size */
 }
 
 
@@ -40,16 +40,12 @@ body {
     width: 30%;
     height: 1000px;
     background-color: #081b29;
-    
-   
 }
 
 .container .Right {
     width: 70%;
     height: 1000px;
     background-color: whitesmoke;
-   
-    
 }
 
 .circular--portrait {
@@ -68,133 +64,138 @@ body {
 }
 
 .synopsis {
-    font-size: 13px;
+    font-size: 1.2vw; /* Responsive font size */
     font-weight: bold;
-    padding-top: 20px;
-    padding-left: 20px;
-    color: #fff
+    padding-top: 1.5vw; /* Responsive padding */
+    padding-left: 2vw; /* Responsive padding */
+    color: #fff;
 }
 
 .Profile p {
-    width: 150px;
+    width: 15vw; /* Responsive width */
     word-wrap: normal;
-    font-size: 12px;
+    font-size: 1.2vw; /* Responsive font size */
     color: #fff;
-    padding-left: 20px;
-    padding-top: -30px;
+    padding-left: 2vw; /* Responsive padding */
+    padding-top: -3vw; /* Responsive padding */
 }
 
 ul {
     position: relative;
-    padding-left: 10px;
+    padding-left: 1vw; /* Responsive padding */
 }
 
 ul li {
     list-style: none;
-    padding-left: -20px;
-    padding-top: -30px;
+    padding-left: -2vw; /* Responsive padding */
+    padding-top: -3vw; /* Responsive padding */
     cursor: pointer;
-    margin: 10px 0;
+    margin: 1vw 0; /* Responsive margin */
 }
 
 ul li .icon {
     display: inline;
-    width: 30px;
-    font-size: 10px;
+    width: 3vw; /* Responsive width */
+    font-size: 1vw; /* Responsive font size */
     color: #fff;
-    margin-left: 10px;
+    margin-left: 1vw; /* Responsive margin */
 }
 
 .container ul span {
     color: #fff;
-    width: 30px;
-    font-size: 12px;
+    width: 3vw; /* Responsive width */
+    font-size: 1.2vw; /* Responsive font size */
     left: 0;
-    padding-left: -10px;
+    padding-left: -1vw; /* Responsive padding */
 }
 
 .text {
-    padding: 5px;
-    width: 200px;
+    padding: 0.5vw; /* Responsive padding */
+    width: 20vw; /* Responsive width */
     word-wrap: normal;
 }
 
 .subheading {
     color: #fff;
-    width: 30px;
-    font-size: 12px;
+    width: 3vw; /* Responsive width */
+    font-size: 1.2vw; /* Responsive font size */
     font-weight: bold;
     left: 0;
-    padding-left: 10px;
+    padding-left: 1vw; /* Responsive padding */
 }
 
 .container .Right .rightsynopsis {
-    font-size: 16px;
+    font-size: 1.5vw; /* Responsive font size */
     font-weight: bold;
     color: #081b29;
-    margin-left: 5px;
+    margin-left: 0.5vw; /* Responsive margin */
 }
 
 .container .Right .rightsynopsis i {
-    width: 30px;
-    font-size: 15px;
+    width: 3vw; /* Responsive width */
+    font-size: 1.5vw; /* Responsive font size */
     color: #081b29;
-    margin-left: 5px;
-    margin-top: 10px;
+    margin-left: 0.5vw; /* Responsive margin */
+    margin-top: 1vw; /* Responsive margin */
 }
 
 .Right ul span {
     color: #081b29;
-    width: 30px;
-    font-size: 12px;
+    width: 3vw; /* Responsive width */
+    font-size: 1.2vw; /* Responsive font size */
     left: 0;
-    padding-left: -10px;
+    padding-left: -1vw; /* Responsive padding */
 }
 
 .textr {
-    padding: 5px;
-    width: 200px;
+    padding: 0.5vw; /* Responsive padding */
+    width: 20vw; /* Responsive width */
     word-wrap: normal;
 }
 
 .Intrest .iconi {
-    width: 20px;
+    width: 2vw; /* Responsive width */
 }
 
 .Project p {
     color: #081b29;
-    width: 400px;
+    width: 40vw; /* Responsive width */
     word-wrap: normal;
-    font-size: 12px;
-    padding-left: 20px;
-    padding-top: -30px;
+    font-size: 1.2vw; /* Responsive font size */
+    padding-left: 2vw; /* Responsive padding */
+    padding-top: -3vw; /* Responsive padding */
 }
 
 .Project h1 {
     color: #081b29;
-    font-size: 14px;
+    font-size: 1.4vw; /* Responsive font size */
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: 15vw; /* Responsive margin */
 }
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%;
+
+@media only screen and (max-width: 912px) {
+    .container .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container .Left,
+    .container .Right {
+        width: 90%; /* Adjust width for smaller screens */
+        flex-direction: column;
+
     }
     
     .container .Left {
-        width: 90%;
-        position: relative;
-        left: auto;
-        top: auto;
-        margin: auto;
-        padding-top: 20px;
+        order: 1; /* Change the order of left section to appear before right section */
+        margin-bottom: 20px; /* Add margin at the bottom */
     }
     
     .container .Right {
-        width: 90%;
-        position: relative;
-        right: auto;
-        top: auto;
-        margin: auto;
+        order: 2; /* Change the order of right section to appear after left section */
+        
     }
 }
